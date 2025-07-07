@@ -35,7 +35,7 @@ scenarios_df = load_scenarios()
 with st.form("form_scenario"):
     secteur = st.selectbox("Secteur", ["BTP", "Transport", "Santé"])
     objectif = st.text_input("Objectif de prévention", "Risque de chute")
-    public = st.text_input("Public ciblé (laisser vide si non discriminant)", "")
+    public = st.text_input("Public ciblé", "")
     format_jeu = st.selectbox("Format", ["jeu narratif interactif", "quizz", "vidéo animée"])
     ton = st.selectbox("Ton", ["réaliste", "humoristique", "dramatique"])
     modele_jeu = st.radio("Modèle de jeu", ["Arbre décisionnel classique", "Modèle itératif/adaptatif"])
